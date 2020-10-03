@@ -53,3 +53,5 @@ $ git push original cancelacion
 
 -- enviamos los Tag
 $ git push original master --tags
+
+-- git commit -am "
