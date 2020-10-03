@@ -1,0 +1,55 @@
+
+
+verificar la configurqcion de GIT
+$ git config -l
+
+
+inicializamos un proyecto (crear una carpeta):
+
+$ git init repo
+
+-- verificamos la creacion de la carpeta
+
+ls
+
+-- ingresar a la carpeta ( repo)
+cd repo
+
+--ingresamos a la carpera repo y creamos un archivo .sql
+
+--adicionamos al repo local
+
+$git add .
+$git commit -m " comentario"
+
+-- para etiquetar
+git tag -a v1.0 -m "primer tag"
+
+
+--clonamos
+$ git clone https://github.com/sucuenta/repo.git
+
+ingresamos al repositorio
+$ cd repositorio/
+
+--remoteamos
+$ git remote add original https://github.com/sucuenta/repo.git
+
+-- verificamos
+$ git remote -v
+
+-- 
+$ git fetch original main
+
+-- mezclar
+$ git merge original/main --allow-unrelated-histories
+
+-- enviamos al repositorio remoto
+$ git push original master
+
+-- enviamos los branch al repositorio remoto
+$ git push original desarrollo
+$ git push original cancelacion
+
+-- enviamos los Tag
+$ git push original master --tags
