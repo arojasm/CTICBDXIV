@@ -19,6 +19,23 @@ razonsocialdistribuidor varchar2(100)
 select * from m_distribuidor
 
 
+CREATE TABLE fact_factura 
+(
+Factura varchar2(50),
+Fecha varchar2(50),
+CodigoPais varchar2(50),
+CodigoDistribuidor varchar2(50),
+CodigoOperador varchar2(50),
+CodigoModelo varchar2(50),
+Cantidad varchar2(50),
+Precio number(16,2),
+Venta number(16,2),
+Objetivo number(16,2),
+KPI_VENTA number(16,2)
+)
+
+
+
 
 exit;
 
