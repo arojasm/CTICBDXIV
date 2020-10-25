@@ -179,7 +179,7 @@ set hive.exec.dynamic.partition=true;
 set hive.exec.dynamic.partition.mode=nonstrict;
 
 
--- INSERT DIRECTO  ;
+-- INSERT DIRECTO;
 
 INSERT OVERWRITE TABLE TEMPORAL.TRANSACCION_PART_DIN
 PARTITION (FECHA)
@@ -191,7 +191,7 @@ TEMPORAL.TRANSACCION_SIN_PART;
 ALTER TABLE TEMPORAL.TRANSACCION_PART_DIN
 DROP IF EXISTS PARTITION ( FECHA ='2018-01-23');
 
-
+-- 1.5 horas pendientes.
 
 
 
